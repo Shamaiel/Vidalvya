@@ -79,7 +79,7 @@ const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, initialMode = 'l
         ? { email: formData.email, password: formData.password }
         : { name: formData.name, email: formData.email, password: formData.password };
 
-      const response = await fetch(`https://vidalvya.onrender.com/${endpoint}`, {
+      const response = await fetch(`https://vidalvya.onrender.com${endpoint}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
